@@ -1,10 +1,12 @@
-<h1>{{ section.settings.text }}</h1>
-<product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
-  <p>got products</p>
-  {%- if recommendations.performed and recommendations.products_count > 0 -%}
+<div>
+  <h1>{{ section.settings.text }}</h1>
+  <product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
     <p>got products</p>
-  {%- endif -%}
-</product-recommendations>
+    {%- if recommendations.performed and recommendations.products_count > 0 -%}
+      <p>got products</p>
+    {%- endif -%}
+  </product-recommendations>
+</div>
 
 {% schema %}
 {
