@@ -6,6 +6,7 @@
   <h1> before </h1>
   {% if recommendations != blank %}
     <h1> not blank </h1>
+    <h1> {{ recommendations | json }} </h1>
   {% endif %}
   {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     <h1>{{ section.settings.text }}</h1>
