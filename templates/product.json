@@ -99,10 +99,16 @@
         "padding_top": 8,
         "padding_bottom": 28
       }
+    },
+    "f2bf0f6f-692a-41e8-bb74-ad2b8e2fc522": {
+      "type": "goes-well-with",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "f2bf0f6f-692a-41e8-bb74-ad2b8e2fc522"
   ]
 }
