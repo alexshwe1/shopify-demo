@@ -5,39 +5,6 @@
     text-decoration: none;
 }
 
-.image-container {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-}
-
-/* Styling for the image */
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px; /* Optional: Add rounded corners to the image */
-}
-
-/* Styling for the title overlay */
-.image-container .title-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: #fff; /* Text color */
-    padding: 10px;
-    box-sizing: border-box;
-    transform: translateY(100%); /* Initially move the overlay below the image */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
-
-/* Hover effect: Slide up the title overlay on hover */
-.image-container:hover .title-overlay {
-    transform: translateY(75%); /* Slide up 25% of the overlay */
-}
-
 @media screen and (min-width: 990px) {
     .card .media.media--hover-effect>img:only-child,
     .card-wrapper .media.media--hover-effect>img:only-child {
