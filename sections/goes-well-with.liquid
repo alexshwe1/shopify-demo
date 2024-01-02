@@ -32,7 +32,7 @@
     >
       {% for recommendation in recommendations.products %}
         <li class="grid__item">
-          {% render 'card-product',
+          {% render 'goes-well-with-card',
             card_product: recommendation,
             media_aspect_ratio: section.settings.image_ratio,
             image_shape: section.settings.image_shape,
@@ -138,6 +138,15 @@
     {
       "type": "header",
       "content": "t:sections.related-products.settings.header_mobile.content"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.related-products.settings.columns_desktop.label"
     },
     {
       "type": "select",
